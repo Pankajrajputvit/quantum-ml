@@ -1,0 +1,42 @@
+.circuit-builder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, #eaeaea, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 100%; /* Allow full width of the parent */
+    width: 100%; /* Ensure the container takes full width */
+  }
+  
+  .circuit-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .circuit-iframe-container {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures no overflow from iframe */
+    width: 100%; /* Set to full width */
+  }
+  
+  .circuit-iframe {
+    width: 100%; /* Set iframe to full width of the container */
+    height: 600px; /* Adjust the height as needed */
+    border: none; /* Remove border if desired */
+  }
+  
+  .circuit-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    text-align: center;
+    padding: 0 10px; /* Adds some padding for better readability */
+  }
+  

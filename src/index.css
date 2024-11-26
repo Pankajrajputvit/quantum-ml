@@ -1,0 +1,45 @@
+header {
+  background: #003366; /* Dark Midnight Blue background */
+  color: #ffffff; /* White text */
+  padding: 15px 20px; /* More padding for a spacious feel */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between logo and nav */
+}
+
+header h1 {
+  font-size: 1.8em; /* Larger font size for the title */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for horizontal alignment */
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+  color: #e6e6fa; /* Light Lavender text color */
+  text-decoration: none;
+  font-weight: bold; /* Make text bold */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #ff6b6b; /* Change color on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366; /* Match footer to header */
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

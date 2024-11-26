@@ -1,0 +1,91 @@
+.quantum-concepts-container {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-section p {
+    font-size: 1.3rem;
+    color: #6c757d;
+}
+
+.concept-section {
+    margin-bottom: 50px;
+}
+
+.concept-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.concept-section p, .concept-section ul {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.concept-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.comparison-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.comparison-table td {
+    background-color: #f8f9fa;
+}
+
+.visualization-placeholder {
+    height: 300px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    border: 2px dashed #6c757d;
+}
+@media (max-width: 768px) {
+    .quantum-concepts-container {
+        padding: 20px;
+    }
+
+    .header-section h1 {
+        font-size: 2rem;
+    }
+
+    .concept-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .comparison-table {
+        font-size: 1rem;
+    }
+}
+.comparison-table tbody tr:hover {
+    background-color: #e2e6ea;
+    cursor: pointer;
+}

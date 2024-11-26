@@ -1,0 +1,37 @@
+.custom-fullscreen-modal .modal-content {
+
+    max-width: none !important;
+}
+
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding: 15px; /* Adjust padding for better spacing */
+}
+
+.modal-title {
+    font-size: 1.5rem; /* Adjust title size if needed */
+    font-weight: bold;
+    color: #007bff; /* Change title color if desired */
+}
+
+.modal-body {
+    background-color: #f8f9fa; /* Light background for the body */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Optional: Button styling */
+.btn-secondary {
+    background-color: #007bff; /* Change button color */
+    border: none; /* Remove border */
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,247 @@
+/* QuantumCircuitBuilder.css */
+
+/* Container styling for the entire circuit builder */
+.circuit-builder-container {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+.circuit-builder-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Toolbox for gates */
+.toolbox {
+    display: flex;
+    flex-wrap: wrap; /* Allows gates to wrap to a new row if needed */
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e8f0fe;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 15px; /* Adds space between gate items */
+}
+
+/* Gate items styling */
+.gate-item {
+    display: flex;
+    justify-content: space-between; /* Ensures space between gate name and info button */
+    align-items: center;
+    padding: 10px 15px; /* Add more padding for better spacing */
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    width: 120px; /* Sets a consistent width for each gate */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncates long gate names */
+}
+
+.gate-item:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Qubit row styling */
+.qubit-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qubit-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.gate-track {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    min-width: 300px;
+}
+
+/* Gate on track */
+.gate-on-track {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.gate-on-track:hover {
+    background-color: #0056b3;
+}
+
+.remove-gate-button {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Control buttons */
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.run-button, .reset-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.run-button:hover, .reset-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.reset-button {
+    background-color: #dc3545;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;                   /* Fixed position for overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;           /* Center modal */
+    align-items: center;               /* Center modal */
+    z-index: 20;                       /* Above other content */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;            /* White background for content */
+    border-radius: 8px;                /* Rounded corners */
+    padding: 20px;                     /* Padding inside modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 500px;                 /* Max width for the modal */
+    width: 90%;                       /* Responsive width */
+    text-align: left;                 /* Align text to the left */
+}
+
+/* Modal Header */
+.modal-content h3 {
+    margin-top: 0;                    /* No margin on top */
+    font-size: 1.5rem;                /* Larger font size for header */
+    color: #007bff;                   /* Blue color for the header */
+}
+
+/* Modal List */
+.modal-content ul {
+    list-style-type: none;            /* Remove bullet points */
+    padding-left: 0;                  /* Remove left padding */
+}
+
+/* List Items */
+.modal-content li {
+    margin: 10px 0;                   /* Space between list items */
+    padding: 10px;                    /* Padding for list items */
+    border-radius: 5px;               /* Rounded corners for items */
+    background-color: #f9f9f9;        /* Light gray background for items */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* List Item Hover Effect */
+.modal-content li:hover {
+    background-color: #e0e0e0;        /* Darker gray on hover */
+}
+
+/* Close Button */
+.modal-content button {
+    background-color: #007bff;        /* Blue background for close button */
+    color: white;                     /* White text */
+    border: none;                     /* Remove border */
+    border-radius: 5px;              /* Rounded corners */
+    padding: 10px 15px;              /* Padding for button */
+    cursor: pointer;                  /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Close Button Hover Effect */
+.modal-content button:hover {
+    background-color: #0056b3;        /* Darker blue on hover */
+}
+
+/* Sleek and modern info button styling */
+/* Sleek and modern info button styling */
+.info-button {
+    display: flex;
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    background-color: #fff;               /* White background for a clean look */
+    color: #007bff;                       /* Blue text color for visibility */
+    padding: 10px;                        /* Increased padding for comfort */
+    border: 2px solid #007bff;            /* Thicker blue border for better definition */
+    border-radius: 50%;                   /* Circular button */
+    font-size: 1.2rem;                    /* Slightly larger font size for clarity */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    position: absolute;
+    top: 15px;                            /* Adjust position as needed */
+    right: 15px;                          /* Adjust position as needed */
+    z-index: 10;                          /* Ensure visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    
+}
+
+.info-button:hover {
+    background-color: #007bff;            /* Blue background on hover */
+    color: #fff;                          /* White text on hover */
+    border-color: #0056b3;                /* Darker blue border on hover */
+    transform: scale(1.1);                /* Slightly larger on hover for emphasis */
+}
+
+.info-button:focus {
+    outline: none;                        /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Soft blue glow for focus */
+}
+
+/* Ensure the layout remains clean for gate items on smaller screens */
+@media (max-width: 768px) {
+    .gate-item {
+        width: 100%; /* Make gate items full-width on small screens */
+        margin-bottom: 10px; /* Adds some spacing between gate items */
+    }
+}
